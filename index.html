@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>W3.CSS Template</title>
+<title>JuliaPhylo</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 .w3-bar,h1,button {font-family: "Montserrat", sans-serif}
@@ -70,74 +69,98 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="w3-content">
     <!-- <div class="w3-twothird"> -->
     <h1>Packages</h1>
-    <p class="w3-text-grey">This is Section 1.</p>
+    <p class="w3-text-grey">JuliaPhylo Packages</p>
+
+    <!-- First Row -->
     <div class="packages-container">
+      <!-- tile 1 -->
       <a href="https://github.com/JuliaPhylo/PhyloNetworks.jl/tree/master" target="_blank" class="package-link">
-        <section class="box" id="PhyloNetworksSection">
+        <section class="box">
           <img src="PhyloNetworksLogo.png" class="pkg-img" alt="">
           <br>
           <br>
           <p class="box-text">Utilities for handling and manipulating phylogenetic trees and networks.</p>
           <p></p>
           <p class="box-text">PhyloNetworks provides high-level utilities for analyzing and evaluating phylogenetic networks such as:</p>
+          <ul>
+            <li> Reading and writing phylogenetic networks in (extended) Newick format</li>
+            <li> Computing quartet concordance factors</li>
+            <li> Calculating distance and dissimilarity measures</li>
+            <li> Reporting features of the network (e.g., height of the network, displayed trees within the network, network level, etc.)</li>
+            <li>Summarizing samples to evaluate support for the network</li>
+            <li>Constructing a network from parsimony or neighbor-joining methods</li>
+          </ul>
+          <br>
+          <p class="box-text">PhyloNetworks additionally contains many 'lower-level' functions and utilities that are used in a variety of other 
+            specialized packages:</p>
+          <ul>
+            <li> Network traversal routines</li>
+            <li>  Network manipulation </li>
+            <li> Moves on networks (e.g., NNI) to traverse network space</li>
+            <li> Appropriate bookkeeping when removing leaves or hybrid edges</li>
+          </ul>
+
         </section>
       </a>
-      <a href="https://github.com/JuliaPhylo/PhyloNetworks.jl/tree/master" target="_blank" class="package-link">
-        <section class="box" id="PhyloNetworksSection">
+      <!-- tile 2 -->
+      <a href="https://github.com/JuliaPhylo/SNaQ.jl" target="_blank" class="package-link">
+        <section class="box">
           <img src="snaq-logo.png" class="pkg-img" alt="">
           <br>
           <br>
-          <p class="box-text">Utilities for handling and manipulating phylogenetic trees and networks.</p>
-          <p></p>
-          <p class="box-text">PhyloNetworks provides high-level utilities for analyzing and evaluating phylogenetic networks such as:</p>
+          <p class="box-text">Snaq description</p>
         </section>
       </a>
-      <a href="https://github.com/JuliaPhylo/PhyloNetworks.jl/tree/master" target="_blank" class="package-link">
-        <section class="box" id="PhyloNetworksSection">
-          <!-- <img src="logo.png" class="pkg-img" alt=""> -->
+
+      <!-- tile 3 -->
+      <a href="https://github.com/JuliaPhylo/PhyloTraits.jl" target="_blank" class="package-link">
+        <section class="box" >
           <h1 class="pkg-text">PhyloTraits</h1>
           <br>
-          <p class="box-text">Utilities for handling and manipulating phylogenetic trees and networks.</p>
+          <p class="box-text">A package for trait evolution along phylogenies.</p>
           <p></p>
-          <p class="box-text">PhyloNetworks provides high-level utilities for analyzing and evaluating phylogenetic networks such as:</p>
+          <p class="box-text">PhyloTraits provides functions for simulating and analyzing the evolution of both continuous and discrete traits 
+            along phylogenies, including phylogenetic networks. PhyloTraits enables researchers to test various hypotheses of trait evolution by 
+            fitting many models to character data on a phylogeny. This package also allows users to estimate of rates of evolution, ancestral states, 
+            and assess the correlation between multiple traits.
+          </p>
         </section>
       </a>
     </div>
+
     <br>
+    <!-- Secod Row -->
     <div class="packages-container">
-      <a href="https://github.com/JuliaPhylo/PhyloNetworks.jl/tree/master" target="_blank" class="package-link">
-        <section class="box" id="PhyloNetworksSection">
-          <img src="PhyloNetworksLogo.png" class="pkg-img" alt="">
+      
+      <!-- tile 1 -->
+      <a href="https://github.com/JuliaPhylo/PhyloGaussianBeliefProp.jl" target="_blank" class="package-link">
+        <section class="box" >
+          <h1 class="pkg-text">PhyloGaussianBeliefProp</h1>
           <br>
-          <br>
-          <p class="box-text">Utilities for handling and manipulating phylogenetic trees and networks.</p>
-          <p></p>
-          <p class="box-text">PhyloNetworks provides high-level utilities for analyzing and evaluating phylogenetic networks such as:</p>
+          <p class="box-text">package for the analysis of Gaussian models on phylogenetic networks and admixture graphs using belief propagation (aka message passing).</p>
         </section>
       </a>
-      <!-- <br> -->
-      <a href="https://github.com/JuliaPhylo/PhyloNetworks.jl/tree/master" target="_blank" class="package-link">
-        <section class="box" id="PhyloNetworksSection">
-          <img src="snaq-logo.png" class="pkg-img" alt="">
+
+      <!-- tile 2 -->
+      <a href="https://github.com/JuliaPhylo/PhyloPlots.jl" target="_blank" class="package-link">
+        <section class="box" >
+          <h1 class="pkg-text">PhyloPlots</h1>
           <br>
-          <br>
-          <p class="box-text">Utilities for handling and manipulating phylogenetic trees and networks.</p>
-          <p></p>
-          <p class="box-text">PhyloNetworks provides high-level utilities for analyzing and evaluating phylogenetic networks such as:</p>
+          <p class="box-text">PhyloPlots has utilities to plot tree and network objects from PhyloNetworks through R via RCall.</p>
         </section>
       </a>
-      <a href="https://github.com/JuliaPhylo/PhyloNetworks.jl/tree/master" target="_blank" class="package-link">
-        <section class="box" id="PhyloNetworksSection">
-          <!-- <img src="logo.png" class="pkg-img" alt=""> -->
-          <h1 class="pkg-text">PhyloTraits</h1>
+
+      <!-- tile 3 -->
+      <a href="https://github.com/JuliaPhylo/PhyloCoalSimulations.jl" target="_blank" class="package-link">
+        <section class="box">
+          <h1 class="pkg-text">PhyloCoalSimulations</h1>
           <br>
-          <p class="box-text">Utilities for handling and manipulating phylogenetic trees and networks.</p>
-          <p></p>
-          <p class="box-text">PhyloNetworks provides high-level utilities for analyzing and evaluating phylogenetic networks such as:</p>
+          <p class="box-text">PhyloCoalSimulations is a Julia package to simulate phylogenies under the coalescent. 
+            It implements the network multi-species coalescent model with possible inheritance correlation</p>
         </section>
       </a>
     </div>  
-    <!-- </div> -->
+
  
     
   </div>
@@ -148,7 +171,13 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   <div class="w3-content">
     <div class="w3-twothird">
       <h1>Community</h1>
-      <p class="w3-text-grey">This is Section 1.</p>
+      <p class="w3-text-grey">Abide by <a  target="_blank" href="https://julialang.org/community/standards/">Community Guidelines</a> </p>
+      <a target="_blank" href="https://discourse.julialang.org/search?q=phylo">Julia Discourse Forum</a>
+      <p>Join our Google Groups Conversation:
+        <a target="_blank" href="https://groups.google.com/g/phylonetworks-users">https://groups.google.com/g/phylonetworks-users</a>
+      </p>
+      <p>Join the phylo channel on <a href="https://julialang.org/slack/">Julia's Slack</a></p>
+
     </div>
     <div class="w3-third w3-center">
       <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
@@ -156,31 +185,6 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
   </div>
 </div>
 
-<!-- Community Section -->
-<!-- <div id="section2" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-  <div class="w3-content">
-    <div class="w3-third w3-center">
-      <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
-    </div>
-    <div class="w3-twothird">
-      <h1>Section 2</h1>
-      <p class="w3-text-grey">This is Section 2.</p>
-    </div>
-  </div>
-</div> -->
-
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
-  <div class="w3-xlarge w3-padding-32">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
- </div>
- <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
-</footer>
 
 <script>
 // Used to toggle the menu on small screens when clicking on the menu button
